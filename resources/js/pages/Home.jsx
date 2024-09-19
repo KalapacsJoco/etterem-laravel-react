@@ -1,5 +1,13 @@
-export default function Home(){
-    return <>
-    <h1 className="text-gray-200">Hello user</h1>
+import Layout from './Layout'
+
+const Home = () => {
+  return (
+    <>
+      <p>Hello, welcome to your first Inertia app!</p>
     </>
+  )
 }
+
+Home.layout = page => <Layout children={page} title="Welcome" />
+
+export default Home
